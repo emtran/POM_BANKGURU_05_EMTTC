@@ -34,7 +34,7 @@ public class Login_01_CreateAccountAndLoginToApplication {
 		
 		userId = driver.findElement(By.xpath("//td[text()='User ID :']/following-sibling::td")).getText();
 		password = driver.findElement(By.xpath("//td[text()='Password :']/following-sibling::td")).getText();
-		//check
+		
 	}
 	
 	@Test
