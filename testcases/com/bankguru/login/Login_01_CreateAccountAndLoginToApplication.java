@@ -32,8 +32,6 @@ public class Login_01_CreateAccountAndLoginToApplication {
 		driver.findElement(By.xpath("//input[@name='emailid']")).sendKeys(email);
 		driver.findElement(By.xpath("//input[@name='btnLogin']")).click();
 		
-		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
 		userId = driver.findElement(By.xpath("//td[text()='User ID :']/following-sibling::td")).getText();
 		password = driver.findElement(By.xpath("//td[text()='Password :']/following-sibling::td")).getText();
 	}
